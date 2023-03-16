@@ -2,6 +2,9 @@ from random import randint
 
 
 def get_random_coin(count_20, count_3):
+    """
+    Получение результата доставания монетки
+    """
     x = randint(1, count_3 + count_20)
     if x <= count_20:
         return 20
@@ -9,6 +12,9 @@ def get_random_coin(count_20, count_3):
 
 
 def one_iteration():
+    """
+    Одна итерация вытягивания двух монет
+    """
     count_20 = 3
     count_3 = 7
     first_coin = get_random_coin(count_20, count_3)
@@ -23,6 +29,9 @@ def one_iteration():
 
 
 def main():
+    """
+    Основной цикл, запускающий одну итерацию несколько раз
+    """
     iteration_counter = 0
     event_counter = 0
     while iteration_counter < 1_000_000:
