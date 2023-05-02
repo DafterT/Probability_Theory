@@ -31,7 +31,7 @@ def do_iterations(N, win, n, count_iterations):
     """
     Функция для выполнения нескольких покупок
     """
-    with Pool(processes=8) as pool:
+    with Pool(processes=12) as pool:
         one_iteration_partial = partial(one_iteration, win=win, n=n, N=N)
         results = pool.map(one_iteration_partial, range(count_iterations))
     return results
@@ -60,6 +60,7 @@ def main():
         real_chance.append(1 - math.comb(N - win, n) / math.comb(N, n))
     plt.plot(points, chance, label='Model', linestyle='--', color='r', marker='o', markersize=3)
     plt.plot(points, real_chance, label='Real', linestyle='--', color='g', marker='o', markersize=3)
+    plt.legend()
     plt.savefig(f"Chance.jpg")
     plt.show()
 
