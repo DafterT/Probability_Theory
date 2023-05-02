@@ -50,7 +50,7 @@ def main():
           f'Смоделированная вероятность получения билета: {event_counter / count_iterations}\n'
           f'Расчетная вероятность получения билета: {1 - math.comb(N - win, n) / math.comb(N, n)}')
     # Пункт b
-    count_iterations = 100
+    count_iterations = 1_000
     chance = []
     real_chance = []
     points = list(range(1000, 20000, 500))
