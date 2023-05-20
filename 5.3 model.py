@@ -1,5 +1,4 @@
 from random import random, randint
-
 import numpy as np
 
 
