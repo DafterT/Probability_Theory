@@ -61,7 +61,7 @@ def main():
     plt.plot(points, chance, label='Model', linestyle='--', color='r', marker='o', markersize=3)
     plt.plot(points, real_chance, label='Real', linestyle='--', color='g', marker='o', markersize=3)
     plt.legend()
-    plt.savefig(f"Chance.jpg")
+    plt.savefig(f"pictures/4.23.Chance.jpg")
     plt.show()
 
 
