@@ -36,7 +36,7 @@ def main():
     plt.plot(formula, [i / 100 for i in range(0, 100)], label='formula', linestyle='--', color='r', marker='o',
              markersize=3)
     plt.legend()
-    plt.savefig(f"pictures/8.40.Chance.jpg")
+    plt.savefig("pictures/8.40.Chance.jpg")
     plt.show()
 
 
