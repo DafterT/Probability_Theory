@@ -34,7 +34,6 @@ def main():
     y = 2 / np.pi * np.arcsin(x * g / (v0 ** 2))
     plt.plot(x, y, color='g', linewidth=2)
     plt.savefig("pictures/12.17.Chance.jpg")
-    plt.grid(True)
     plt.show()
 
 
